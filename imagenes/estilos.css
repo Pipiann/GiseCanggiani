@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
 }
-a {
+/* a {
     color: red;
     font-size: 16px;
-}
-#nombre{
+} */
+/* #nombre{
     height: 24px;
     border: 2px solid blue;
 }
@@ -17,8 +17,9 @@ a {
 .campoEnRojo{
     border: 2px solid red;
     border-radius: 4px;
-} 
-input, textarea{
+}  */ */
+
+input, textarea {
     width: 100%;
     padding: 4px;
     border: 1px solid #ccc;
@@ -39,7 +40,7 @@ textarea {
     cursor: pointer;
     margin-top: 15px;
 }
-.botonSubmit:hover{
+.botonSubmit:hover {
     background-color: #45a049;
 }
 nav{
@@ -47,12 +48,35 @@ nav{
     padding: 20px;
     display: flex;
 }
-.linkNav{
+.linkNav {
     display: block;
-    color: rgb(2,2,2)
-    text-aling: center;
+    color: rgb(2, 2, 2);
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     background-color: #d4d4d4;
-    margin-left: 2px
+    margin-left: 2px;    
 }
+.linkNav:hover {
+    background-color: #04aa6d;
+}
+#bannerimage {
+    width: 100%;
+    background-image: url(../imagenes/1503586546-sakura2.webp);
+    height: 405px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color:darkcyan;
+    border: black;
+    border-radius: 4px;
+    width: 50%;
+    height: 25%;
+    }
+.ig {
+    position: center;
+    width: 50px;
+    height: 50px;
+}    
