@@ -7,11 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <h1>Ingreso de Datos</h1>
+
   <body>
     <div>
         <form action="index.html" style="margin: 150px;" method="get"></form>
          <label for="Evento" style="margin: 15px;"><u><b><i>Evento</label></i></b></u> 
-          <select name="Evento" id="Evento"> <option value="Casamiento">Casamiento</option>
+          <select name="Evento" id="Evento">
+          <option value="Casamiento">Casamiento</option>
            <option value="Cumpleaños de 15">Cumpleaños de 15</option>
            <option value="Eventos Corporativos">Eventos Corporativos</option>
            <option value="Contenido Instagram">Contenido Instagram</option>
@@ -22,9 +24,9 @@
            <option value="Ficción">Ficción</option>
           </select>
          <label  style="margin: 15px;"><u><b><i>Nombre del Cliente</label></i></b></u> 
-           <input type="text" name="NombreDelCliente" id="NombredelCliente" class="linkNav" > 
+           <input type="text" name="NombreDelCliente" id="NombreDelCliente" class="linkNav" onblur="validateformcontacto2('NombreDelCliente')"> 
          <label  style="margin: 15px;"><u><b><i> Fecha de Evento</label></i></b></u> 
-           <input type="text" name="FechaEvento" id="FechaEvento" class="linkNav" > 
+           <input type="text" name="FechaEvento" id="FechaEvento" class="linkNav" onblur="validateformcontacto2('FechaEvento')"> 
          <label  style="margin: 15px;"><u><b><i>País</label></i></b></u> 
             <select name="Pais" id="Pais">
              <option value="Argentina">Argentina</option>
@@ -32,7 +34,7 @@
              <option value="Otro">Otro</option>
             </select>
          <label  style="margin: 15px;"><u><b><i>Dirección</label></i></b></u> 
-           <input type="text" name="Dirección" id="Dirección" class="linkNav" > 
+           <input type="text" name="Dirección" id="Dirección" class="linkNav" onblur="validateformcontacto2('Dirección')"> 
          <label  style="margin: 15px;"><u><b><i>Nombre del Salón</label></i></b></u> 
            <input type="text" name="NombreSalon" id="NombreSalon" class="linkNav" > 
          <label style="margin-left:  1S0px;"><u><b><i>Teléfono</label></i></b></u>
@@ -70,8 +72,8 @@
            <input type="text" name="FechaEntrega" id="FechaEntrega" class="linkNav" >        
          <label for="Comentarios"><u><b><i>Comentarios</i></b></u>
             <textarea name="Comentarios" id="Comentarios"  class="linkNav" cols="30" rows="10"></textarea>
-         <button type="Submit" class="botonSubmit">Enviar</button>
-            <label for="tel" style="margin: 15px;"></label>
+        <button type="Submit" class="botonSubmit" id="botonSubmit">Enviar</button>
+            
          </div>
          <div class="container">
         <form>
@@ -85,7 +87,7 @@
     </div>  
   </footer> 
   </body>
-  
+  <script src="../Proyecto calendario/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
