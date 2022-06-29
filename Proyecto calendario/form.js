@@ -147,4 +147,19 @@ function verificarEstado() {
     }
 }
 
+document.getElementById('boton').onclick= function() {
+    fetch ('backup.json')
+    .then (backup=>backup.json ())
+    .then (backup=>{
+        for (var i=0; i<backup.lenght;i++=) {
+             document.getElementById ('registros').innerHTML =document.getElementById ('registros').innerHTML +
+             "<tr>"+
+                "<th scope="row">"backup[i].EventoNumero +"</th>"+
+                "<td>"backup[i].NombreDelCliente +</td>"+
+                "<td>"backup[i].NombreSalon +</td>"+
+                "<td>"backup[i].Evento +</td>"+ 
+              "<tr>";
+            }
+    })
 
+}
